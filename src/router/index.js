@@ -8,6 +8,7 @@ const routes = [
     path: '/',
     name: 'Home',
     component: () => import('../views/Home.vue'),
+    redirect: 'toolCase',
     children: [
       // 当 /user/:id 匹配成功，
       // UserHome 会被渲染在 User 的 <router-view> 中
